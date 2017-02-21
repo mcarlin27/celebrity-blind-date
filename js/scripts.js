@@ -1,12 +1,11 @@
 $(document).ready(function() {
   $("form#dating").submit(function(event) {
     var age = parseInt($("input#age").val());
-    var gender = $("select#gender").val();
-    var personality = $("select#personality").val();
+    var gender = parseInt($("input#gender").val());
+    var personality = ($("input#personality").val());
+    var date = parseInt (age + gender + personality);
 
-    if (age <= 26 && personality = "happy") {
-      ("#date") = "Miley Cyrus"
-    }
+    
 
     $("#date").empty().append(match);
     $("#match").show();
