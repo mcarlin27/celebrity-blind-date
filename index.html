@@ -10,29 +10,41 @@
   <body>
     <div class="container">
       <h1>Celebrity Blind Date!</h1>
-      <p>Fill in the information below to match with your celebrity blind date!</p>
       <form id="dating">
-        <label for="age">Age</label>
-        <input id="age" type="text">
-        <label for="gender">Gender</label>
-        <select id="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="non-binary">Non-binary</option>
-          <option value="other">Other</option>
-        </select>
-        <label for="personality">Pick a word to describe yourself:</option>
-        <select id="personality">
-          <option value="happy">Happy</option>
-          <option value="sad">Sad</option>
-          <option value="energetic">Energetic</option>
-          <option value="boring">Boring</option>
-          <option value="athletic">Athletic</option>
-        </select>
-        <button type="submit" class="btn">Find me a date!</button>
+        <p>Fill in the information below to match with your celebrity blind date!</p>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="age">Age</label>
+            <input id="age" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="personality">Pick a word to describe yourself:</option>
+            <select id="personality">
+              <option value="happy">Happy</option>
+              <option value="sad">Sad</option>
+              <option value="energetic">Energetic</option>
+              <option value="boring">Boring</option>
+              <option value="athletic">Athletic</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-default btn-lg">Find me a date!</button>
       </form>
       <div id="match">
-        <p>You're celebrity blind date is <span id="date"></span></p>
+        <p>Your celebrity blind date is: <span id="date"></span></p>
     </div>
   </body>
 </html>
